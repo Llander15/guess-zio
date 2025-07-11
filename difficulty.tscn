@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://ba1p7q4qievn3"]
+
+[ext_resource type="Script" uid="uid://ce4yl22vvwywm" path="res://difficulty.gd" id="1_ou7of"]
+
+[node name="Difficulty" type="Node2D"]
+script = ExtResource("1_ou7of")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_left = -218.0
+offset_top = -309.0
+offset_right = 218.0
+offset_bottom = -172.0
+theme_override_font_sizes/font_size = 100
+text = "Difficulty"
+
+[node name="Back Button" type="Button" parent="."]
+offset_left = -546.0
+offset_top = 218.0
+offset_right = -423.0
+offset_bottom = 295.0
+theme_override_font_sizes/font_size = 50
+text = "Back"
+
+[node name="Diff 1" type="Button" parent="."]
+offset_left = -508.0
+offset_top = -141.0
+offset_right = -282.0
+offset_bottom = 188.0
+theme_override_font_sizes/font_size = 50
+text = "Difficulty"
+
+[node name="Diff 2" type="Button" parent="."]
+offset_left = -124.0
+offset_top = -141.0
+offset_right = 102.0
+offset_bottom = 188.0
+theme_override_font_sizes/font_size = 50
+text = "Difficulty"
+
+[node name="Diff 3" type="Button" parent="."]
+offset_left = 258.0
+offset_top = -141.0
+offset_right = 484.0
+offset_bottom = 188.0
+theme_override_font_sizes/font_size = 50
+text = "Difficulty"
+
+[connection signal="pressed" from="Back Button" to="." method="_on_back_button_pressed"]
