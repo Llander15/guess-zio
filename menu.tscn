@@ -16,7 +16,9 @@ offset_bottom = -95.0
 theme_override_font_sizes/font_size = 100
 text = "Menu"
 
-[node name="Button 1" type="Button" parent="."]
+[node name="Buttons" type="Node" parent="."]
+
+[node name="Play Button" type="Button" parent="Buttons"]
 offset_left = -475.0
 offset_top = -176.0
 offset_right = -366.0
@@ -24,20 +26,20 @@ offset_bottom = -99.0
 theme_override_font_sizes/font_size = 50
 text = "Play"
 
-[node name="Button 2" type="Button" parent="."]
+[node name="Button 2" type="Button" parent="Buttons"]
 offset_left = -475.0
 offset_top = -47.0
-offset_right = -366.0
+offset_right = -301.0
 offset_bottom = 30.0
 theme_override_font_sizes/font_size = 50
 text = "Button"
 
-[node name="Button 3" type="Button" parent="."]
+[node name="Button 3" type="Button" parent="Buttons"]
 offset_left = -475.0
 offset_top = 75.0
-offset_right = -366.0
+offset_right = -301.0
 offset_bottom = 152.0
 theme_override_font_sizes/font_size = 50
 text = "Button"
 
-[connection signal="pressed" from="Button 1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Buttons/Play Button" to="." method="_on_button_1_pressed"]
