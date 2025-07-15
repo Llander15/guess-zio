@@ -51,4 +51,7 @@ offset_bottom = 295.0
 theme_override_font_sizes/font_size = 50
 text = "Back"
 
+[connection signal="pressed" from="Buttons/Difficulty Buttons/Diff 1" to="." method="diff1Pressed"]
+[connection signal="pressed" from="Buttons/Difficulty Buttons/Diff 2" to="." method="diff2Pressed"]
+[connection signal="pressed" from="Buttons/Difficulty Buttons/Diff 3" to="." method="diff3Pressed"]
 [connection signal="pressed" from="Buttons/Back Button" to="." method="backButtonPressed"]

@@ -14,3 +14,7 @@ config/name="Guess Zio"
 run/main_scene="uid://dwut7kg1wiryc"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="viewport"
